@@ -1,0 +1,29 @@
+{
+  "rest": {
+    "RestGenerator": {
+      "name": "lmstudio-local",
+      "uri": "http://localhost:8000/v1/chat/completions",
+      "method": "post",
+      "headers": {
+        "Content-Type": "application/json"
+      },
+
+      "timeout": 120,
+
+      "req_template_json_object": {
+        "model": "local-model",
+        "messages": [
+          {
+            "role": "user",
+            "content": "$INPUT"
+          }
+        ],
+        "temperature": 0.7,
+        "max_tokens": 512
+      },
+
+      "response_json": true,
+      "response_json_field": "choices"
+    }
+  }
+}
