@@ -1,2 +1,8 @@
 # garak-local-lmstudio
-A quickstart config for local LLMs to be tested for vulnerabilities using garak probes. 
+
+Follow installation instructions from official repo: https://github.com/NVIDIA/garak/
+
+Test connectivity and run the first probe to identify timeout issues:
+```bash
+garak --model_type rest --model_name lmstudio -G garak-config.json --probes malwaregen.Evasion --generations 2
+```
