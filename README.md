@@ -11,3 +11,5 @@ Test connectivity and run the first probe to identify timeout issues:
 ```bash
 garak --model_type rest --model_name lmstudio -G lmstudio-config.json --probes malwaregen.Evasion --generations 2
 ```
+
+You can also change **max_tokens** inside the **.json config file or inside LM Studio itself, depending on the capability of your hardware.**
