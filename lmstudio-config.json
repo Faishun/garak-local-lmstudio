@@ -1,7 +1,7 @@
 {
   "rest": {
     "RestGenerator": {
-      "name": "lmstudio-local",
+      "name": "PUT_YOUR_MODEL_ID",
       "uri": "http://localhost:8000/v1/chat/completions",
       "method": "post",
       "headers": {
@@ -11,7 +11,7 @@
       "timeout": 120,
 
       "req_template_json_object": {
-        "model": "local-model",
+        "model": "PUT_YOUR_MODEL_ID",
         "messages": [
           {
             "role": "user",
